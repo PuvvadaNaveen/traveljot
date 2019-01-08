@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.example.s530714.team05_travel_jot.ActivityProfilePage">
+    <GridLayout
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp">
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_column="1"
+            android:layout_marginStart="80dp"
+            android:layout_row="0"
+            android:text="Profile"
+            android:textAllCaps="true"
+            android:textColor="#6B9E06"
+            android:textSize="24sp"
+            android:textStyle="bold|italic" />
+
+
+    </GridLayout>
+
+    <RelativeLayout
+        android:layout_width="360dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="125dp"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/editText2"
+            android:layout_alignBottom="@+id/editText2"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="13dp"
+            android:text="Name"
+            android:textAlignment="viewStart"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textStyle="bold|italic" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="14dp"
+            android:ems="10"
+            android:hint="Anusha"
+            android:inputType="text"
+            android:textColor="#456d51" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="125dp"
+            android:layout_height="50dp"
+            android:layout_alignStart="@+id/textView3"
+            android:layout_centerVertical="true"
+            android:text="EmailID"
+            android:textAlignment="viewStart"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textStyle="bold|italic" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@id/textView4"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/textView3"
+            android:hint="Anusha@gmail.com"
+            android:inputType="textEmailAddress"
+            android:textColor="#456d51" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+
+        android:layout_marginStart="50dp">
+
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:checked="false"
+                android:onClick="rbClick"
+                android:text="Private"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="60dp"
+                android:onClick="rbClick"
+                android:text="Public"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </RadioGroup>
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="61dp"
+        android:layout_height="57dp"
+        android:layout_gravity="center"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/checkin"
+        android:onClick="checkin"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

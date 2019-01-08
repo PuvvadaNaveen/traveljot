@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.s530714.team05_travel_jot.Location">
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.s530714.team05_travel_jot.ActivityCheckInPage">
+
+        <RelativeLayout
+            android:layout_width="384dp"
+            android:layout_height="51dp"
+            >
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="1dp"
+                android:layout_alignBottom="@+id/button8"
+                android:ems="15"
+                android:hint="Enter Location"
+                android:inputType="textPersonName"
+                android:textColor="#456d51" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="56dp"
+                android:layout_height="54dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/p11"
+                android:text="Get Location"
+                android:textAllCaps="false"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.96"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/editText5"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="60dp"
+            android:ems="10"
+            android:hint="date"
+            android:inputType="date" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:fontFamily="serif"
+            android:gravity="center_horizontal"
+            android:textColor="#6B9E06"
+            android:text="Personal Notes"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium.Inverse"
+            android:textSize="24sp"></TextView>
+
+        <EditText
+            android:id="@+id/Edit"
+            android:layout_width="338dp"
+            android:layout_height="160dp"
+            android:layout_marginTop="15dp"
+            android:layout_above="@+id/button1"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="25dp"
+            android:gravity="center_horizontal"
+            android:maxLines="100000"
+            android:scrollbars="vertical"
+            android:hint="Here you can write your personal notes about the location"
+            android:textColor="#456d51"
+            android:textStyle="italic" />
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="105dp">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="88dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:onClick="Tag"
+                android:background="@drawable/p12" />
+
+             </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/calendar"
+        android:text="Pick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.232" />
+
+
+</android.support.constraint.ConstraintLayout>
+
